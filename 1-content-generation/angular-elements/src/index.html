@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularElements</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+
+  <my-hello name="Alice">
+    <h1>Innner Content</h1>
+  </my-hello>
+  <my-hello name="Bob"></my-hello>
+  <my-hello name="Jack"></my-hello>
+
+<script>
+
+const el = document.querySelector('my-hello');
+el.setAttribute('name', 'John');
+el.addEventListener('clicked', event => console.log(event));
+
+
+</script>
+
+
+</body>
+</html>

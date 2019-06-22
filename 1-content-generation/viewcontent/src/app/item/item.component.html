@@ -1,0 +1,17 @@
+<ng-content select="main"></ng-content>
+<p>
+  item works!
+</p>
+
+<ng-content select="h1"></ng-content>
+
+<ng-template #t>
+  <h1>Hello!</h1>
+</ng-template>
+
+
+<ng-container *ngTemplateOutlet="t"></ng-container>
+
+
+
+<ng-container *ngComponentOutlet="mybanner"></ng-container>

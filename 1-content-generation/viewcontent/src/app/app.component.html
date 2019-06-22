@@ -1,0 +1,37 @@
+<app-item>
+
+  <h1>Hello!</h1>
+  <main #h>
+    sdfsdfsadfsda
+    fsdafsdafsadfsdafdsfsdafasdfsdafsdf
+  </main>
+
+  <app-child name="'John'"></app-child>
+
+</app-item>
+
+
+<h1 colory #c="colory">Hello!</h1>
+
+<button (click)="c.changeColor('green')"> Change to Green! </button>
+
+<input (input)="c.changeColor($event.target.value)">
+
+
+<ul>
+  <li *ngFor="let i of [1,2,3,4,5]">
+      <div *delay="i * 1000; time:50">Something</div>
+  </li>
+</ul>
+
+
+<div>{{'12345'| reverse}}</div>
+<div>{{'12345'| reverse}}</div>
+<div>{{'12345'| reverse}}</div>
+<div>{{'12345'| reverse}}</div>
+<div>{{'12345'| reverse}}</div>
+
+
+<!-- <ng-container delay>
+    <div>Something</div>
+</ng-container> -->
